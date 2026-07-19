@@ -1,15 +1,3 @@
-const books = [
-  {
-    id: "petofi-osszes-koltemenyei",
-    title: "Összes költeményei",
-    author: "Petőfi Sándor",
-    categories: ["Költészet", "Magyar irodalom", "Összegyűjtött művek"],
-    description: "Petőfi Sándor verseinek régi, digitalizált gyűjteménye. A kötet közvetlenül, lapozható formában olvasható.",
-    readerUrl: "https://archive.org/embed/PetofiSandor-osszes-koltemenyei",
-    detailsUrl: "https://archive.org/details/PetofiSandor-osszes-koltemenyei"
-  }
-];
-
 const state = { query: "", category: "Mind" };
 const grid = document.querySelector("#book-grid");
 const search = document.querySelector("#search");
