@@ -97,10 +97,25 @@
       </div>
       <button class="close-dialog" type="button" aria-label="Olvasó bezárása">×</button>
     </div>
-    <div class="reader-frame-wrap">
+    <div class="reader-frame-wrap" id="archive-reader">
       <iframe id="reader-frame" title="Online könyvolvasó" allowfullscreen></iframe>
     </div>
-    <p class="reader-note">Az olvasót az Internet Archive biztosítja. A lapozáshoz használd a kép két oldalán található nyilakat.</p>
+    <section class="castle-reader" id="castle-reader" hidden aria-label="Könyvkastély olvasó">
+      <div class="reader-toolbar">
+        <div class="font-controls" aria-label="Betűméret">
+          <button id="font-smaller" type="button" title="Kisebb betű">A−</button>
+          <button id="font-larger" type="button" title="Nagyobb betű">A+</button>
+        </div>
+        <p id="reader-progress" aria-live="polite">Betöltés…</p>
+        <button id="reader-source" class="source-link" type="button">Eredeti forrás ↗</button>
+      </div>
+      <div class="book-page" id="book-page" tabindex="0" aria-live="polite"></div>
+      <div class="page-controls">
+        <button id="previous-page" type="button">← Előző oldal</button>
+        <button id="next-page" type="button">Következő oldal →</button>
+      </div>
+    </section>
+    <p class="reader-note" id="reader-note"></p>
   </dialog>
 
   <noscript>A könyvek kereséséhez és az online olvasó használatához engedélyezni kell a JavaScriptet.</noscript>
