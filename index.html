@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Régi közkincs könyvek – olvasásra és letöltésre.">
+  <title>Könyvkastély – Régi közkincs könyvek</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konyvek">Ugrás a könyvekhez</a>
+
+  <header class="site-header">
+    <a class="brand" href="#kezdolap" aria-label="Könyvkastély – kezdőlap">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span>
+        <strong>Könyvkastély</strong>
+        <small>Régi könyvek újra nyitva</small>
+      </span>
+    </a>
+    <nav aria-label="Fő navigáció">
+      <a href="#konyvek">Könyvek</a>
+      <a href="#a-konyvtarrol">A könyvtárról</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="kezdolap">
+      <div class="hero-copy">
+        <p class="eyebrow">Nyitott kapu a régi irodalomhoz</p>
+        <h1>Régi közkincs könyvek – olvasásra és letöltésre</h1>
+        <p class="lead">Felfedezésre váró versek, regények és ritka fordítások egy világos, csendes digitális könyvtárban.</p>
+        <a class="primary-button" href="#konyvek">Belépek a könyvtárba</a>
+      </div>
+      <div class="castle-window" aria-hidden="true">
+        <div class="shelf shelf-one"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="shelf shelf-two"><i></i><i></i><i></i><i></i></div>
+        <div class="window-glow"></div>
+      </div>
+    </section>
+
+    <section class="catalogue" id="konyvek" aria-labelledby="catalogue-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A gyűjtemény</p>
+          <h2 id="catalogue-title">Keress a Könyvkastélyban</h2>
+        </div>
+        <p class="book-count" aria-live="polite"><strong id="visible-count">0</strong> könyv</p>
+      </div>
+
+      <div class="search-panel">
+        <label for="search">Keresés szerző, cím vagy kategória szerint</label>
+        <div class="search-row">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Például: Petőfi, vers, költészet…" autocomplete="off">
+          <button id="clear-search" type="button" hidden>Törlés</button>
+        </div>
+        <div class="filters" id="category-filters" aria-label="Kategóriák"></div>
+      </div>
+
+      <div class="book-grid" id="book-grid"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span aria-hidden="true">⌕</span>
+        <h3>Nincs ilyen könyv a polcon</h3>
+        <p>Próbálj másik címet, szerzőt vagy kategóriát.</p>
+      </div>
+    </section>
+
+    <section class="about" id="a-konyvtarrol">
+      <div>
+        <p class="eyebrow">A Könyvkastélyról</p>
+        <h2>Régi értékek, mindenki számára</h2>
+      </div>
+      <div class="about-copy">
+        <p>A Könyvkastély olyan magyar és idegen nyelvű műveket gyűjt össze, amelyek jogszerűen, közkincsként olvashatók. Külön figyelmet kapnak a ritka régi kiadások és fordítások.</p>
+        <p>A könyveket nem értékesítjük. Az online olvasók és a letöltési lehetőségek megbízható digitális gyűjteményekhez vezetnek.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-brand" href="#kezdolap">Könyvkastély</a>
+    <p>Régi közkincs könyvek – olvasásra és letöltésre.</p>
+    <p class="copyright">© <span id="year"></span> Könyvkastély</p>
+  </footer>
+
+  <dialog id="reader-dialog" aria-labelledby="reader-title">
+    <div class="dialog-header">
+      <div>
+        <p class="eyebrow">Online olvasó</p>
+        <h2 id="reader-title"></h2>
+      </div>
+      <button class="close-dialog" type="button" aria-label="Olvasó bezárása">×</button>
+    </div>
+    <div class="reader-frame-wrap">
+      <iframe id="reader-frame" title="Online könyvolvasó" allowfullscreen></iframe>
+    </div>
+    <p class="reader-note">Az olvasót az Internet Archive biztosítja. A lapozáshoz használd a kép két oldalán található nyilakat.</p>
+  </dialog>
+
+  <noscript>A könyvek kereséséhez és az online olvasó használatához engedélyezni kell a JavaScriptet.</noscript>
+</body>
+</html>
