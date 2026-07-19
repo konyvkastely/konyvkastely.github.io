@@ -23,7 +23,7 @@ Ezután: `http://localhost:8000`
 
 ## Új könyv hozzáadása
 
-Az `app.js` fájl elején található `books` listához kell új könyvadatot hozzáadni. A kereső és a kategóriaszűrők automatikusan frissülnek.
+Az összes könyvadat a `books.js` fájlban található. Egy meglévő könyv teljes `{ ... }` adatblokkját kell lemásolni, vesszővel elválasztani, majd átírni. A kereső és a kategóriaszűrők automatikusan frissülnek.
 
 ## Közzététel
 
