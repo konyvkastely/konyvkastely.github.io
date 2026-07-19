@@ -36,5 +36,16 @@ const books = [
     description: "Gracza György monumentális, gazdagon illusztrált történeti munkájának 1894-ben megjelent ötödik kötete, több mint hatszáz digitalizált oldalon.",
     readerUrl: "https://archive.org/embed/az184849ikimagya05grac",
     detailsUrl: "https://archive.org/details/az184849ikimagya05grac"
+  },
+  {
+    id: "rakosi-elnemult-harangok",
+    title: "Elnémult harangok",
+    author: "Rákosi Viktor",
+    categories: ["Regény", "Magyar irodalom", "Erdély"],
+    description: "Rákosi Viktor 1903-ban megjelent regénye szerelemről, hűségről és egy erdélyi falu egymás mellett élő közösségeiről.",
+    readerType: "gutenberg",
+    textUrl: "https://www.gutenberg.org/ebooks/67773.txt.utf-8",
+    readerUrl: "https://www.gutenberg.org/ebooks/67773.html.images",
+    detailsUrl: "https://www.gutenberg.org/ebooks/67773"
   }
 ];
