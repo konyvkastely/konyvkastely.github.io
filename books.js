@@ -18,5 +18,14 @@ const books = [
     description: "Arany János balladáinak 1917-ben, Budapesten megjelent válogatása. A régi kötet 178 oldalon, lapozható formában olvasható.",
     readerUrl: "https://archive.org/embed/aranyjnosvlo00aran",
     detailsUrl: "https://archive.org/details/aranyjnosvlo00aran"
+  },
+  {
+    id: "gracza-szabadsagharcz-tortenete-5",
+    title: "Az 1848–49-iki magyar szabadságharcz története – V. kötet",
+    author: "Gracza György",
+    categories: ["Történelem", "Magyar történelem", "1848–49"],
+    description: "Gracza György monumentális, gazdagon illusztrált történeti munkájának 1894-ben megjelent ötödik kötete, több mint hatszáz digitalizált oldalon.",
+    readerUrl: "https://archive.org/embed/az184849ikimagya05grac",
+    detailsUrl: "https://archive.org/details/az184849ikimagya05grac"
   }
 ];
