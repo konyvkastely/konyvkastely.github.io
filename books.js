@@ -20,6 +20,15 @@ const books = [
     detailsUrl: "https://archive.org/details/aranyjnosvlo00aran"
   },
   {
+    id: "gracza-szabadsagharcz-tortenete-1",
+    title: "Az 1848–49-iki magyar szabadságharcz története – I. kötet",
+    author: "Gracza György",
+    categories: ["Történelem", "Magyar történelem", "1848–49"],
+    description: "Gracza György gazdagon illusztrált, 1894-ben megjelent történeti munkájának első kötete az 1848–49-es forradalom és szabadságharc eseményeiről.",
+    readerUrl: "https://archive.org/embed/az184849ikimagya01gracuoft",
+    detailsUrl: "https://archive.org/details/az184849ikimagya01gracuoft"
+  },
+  {
     id: "gracza-szabadsagharcz-tortenete-5",
     title: "Az 1848–49-iki magyar szabadságharcz története – V. kötet",
     author: "Gracza György",
